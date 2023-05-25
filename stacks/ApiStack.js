@@ -6,6 +6,7 @@ export function ApiStack({ stack, app }) {
 
   // Create the API
   const api = new Api(stack, "Api", {
+    cors: true,
     defaults: {
       authorizer: "iam",
       function: {
